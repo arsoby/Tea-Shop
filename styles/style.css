@@ -1,0 +1,22 @@
+/* Start Global Rule */
+/* import local font  */
+@font-face {
+  font-family:header;
+  src:
+  local("Roboto"),
+  url("../Resources/Fonts/Roboto-VariableFont_wdth\,wght.ttf") format(truetype);
+}
+@font-face {
+  font-family:body;
+  src:
+  local("Arimo"),
+  url("../Resources/Fonts/Arimo-VariableFont_wght.ttf") format(truetype);
+}
+*{
+  font-family: body;
+}
+h1,h2,h3,h4{
+  font-family: header;
+}
+/* End Global Rule */
+
