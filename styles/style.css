@@ -23,6 +23,7 @@
 }
 h1,h2,h3,h4{
   font-family: header;
+  text-transform: capitalize;
 }
 /* End Global Rule */
 
@@ -37,7 +38,7 @@ header{
   column-gap: 40%;
 }
 header img{
-  padding-left: 10px;
+  padding: 10px;
   flex:2 1 15%
 }
 nav{
@@ -53,3 +54,25 @@ nav a{
 }
 
 /* End Header Section */
+
+/* Start Our mission Section */
+.our-mission{
+  background-image: url('../Resources/Images/img-mission-background.png');
+  background-repeat:no-repeat ;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 30px;
+  height: 700px;
+}
+.our-mission h2,.our-mission h4{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/* End Our mission Section */
