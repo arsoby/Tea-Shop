@@ -25,6 +25,10 @@ h1,h2,h3,h4{
   font-family: header;
   text-transform: capitalize;
 }
+/* This Rule for Margin between Sections */
+.our-mission,.tea-of-month,.location,.contact-us{
+  margin: 30px auto;
+}
 /* End Global Rule */
 
 /* Start Header Section */
@@ -55,7 +59,7 @@ nav a{
 
 /* End Header Section */
 
-/* Start Our mission Section */
+/* Start Our Mission Section */
 .our-mission{
   background-image: url('../Resources/Images/img-mission-background.png');
   background-repeat:no-repeat ;
@@ -75,4 +79,39 @@ nav a{
   padding-bottom: 10px;
   padding-top: 10px;
 }
-/* End Our mission Section */
+/* End Our Mission Section */
+
+/* Start Tea Of Month Section */
+section.tea-of-month{
+  width: 1000px;
+  text-align: center;
+}
+h2,p{
+  padding-bottom:20px ;
+}
+.tea-of-month .cards{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.cards .card{
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card img{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+.card h3{
+  padding: 5px 0px;
+}
+
+/* End Tea Of Month Section */
