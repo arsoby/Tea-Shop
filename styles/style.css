@@ -1,38 +1,47 @@
 /* Start Global Rule */
 /* import local font  */
 @font-face {
-  font-family:header;
-  src:
-  local("Roboto"),
-  url("../Resources/Fonts/Roboto-VariableFont_wdth\,wght.ttf") format(truetype);
+  font-family: header;
+  src: local("Roboto"),
+    url("../Resources/Fonts/Roboto-VariableFont_wdth\,wght.ttf")
+      format(truetype);
 }
 @font-face {
-  font-family:body;
-  src:
-  local("Arimo"),
-  url("../Resources/Fonts/Arimo-VariableFont_wght.ttf") format(truetype);
+  font-family: body;
+  src: local("Arimo"),
+    url("../Resources/Fonts/Arimo-VariableFont_wght.ttf") format(truetype);
 }
-*{
-  /* background-color: gray; */
+* {
+  box-sizing: border-box;
   font-family: body;
   color: seashell;
-  background-color: black;
-  opacity: 90%;
   margin: 0;
   padding: 0;
+  opacity: 90%;
 }
-h1,h2,h3,h4{
+body {
+  width: 1260px;
+  margin: auto auto;
+  background-color: black;
+}
+h1,
+h2,
+h3,
+h4 {
   font-family: header;
   text-transform: capitalize;
 }
 /* This Rule for Margin between Sections */
-.our-mission,.tea-of-month,.location,.contact-us{
+.our-mission,
+.tea-of-month,
+.location,
+.contact-us {
   margin: 30px auto;
 }
 /* End Global Rule */
 
 /* Start Header Section */
-header{
+header {
   background-color: black;
   width: 100%;
   height: 69px;
@@ -41,18 +50,18 @@ header{
   justify-content: space-between;
   column-gap: 40%;
 }
-header img{
-  padding: 10px;
-  flex:2 1 15%
+header img {
+  padding-left: 10px;
+  flex: 2 1 15%;
 }
-nav{
+nav {
   display: flex;
   flex: 2 1 40%;
   justify-content: space-between;
   align-items: center;
   padding-right: 10px;
 }
-nav a{
+nav a {
   /* text-decoration: non; */
   color: lightgray;
 }
@@ -60,9 +69,9 @@ nav a{
 /* End Header Section */
 
 /* Start Our Mission Section */
-.our-mission{
-  background-image: url('../Resources/Images/img-mission-background.png');
-  background-repeat:no-repeat ;
+.our-mission {
+  background-image: url("../Resources/Images/img-mission-background.png");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -72,8 +81,12 @@ nav a{
   position: relative;
   margin: 0 30px;
   height: 700px;
+  width: 1200px;
 }
-.our-mission h2,.our-mission h4{
+.our-mission h2,
+.our-mission h4 {
+  background-color: black;
+  opacity: 90%;
   width: 100%;
   text-align: center;
   padding-bottom: 10px;
@@ -82,14 +95,15 @@ nav a{
 /* End Our Mission Section */
 
 /* Start Tea Of Month Section */
-section.tea-of-month{
+section.tea-of-month {
   width: 1000px;
   text-align: center;
 }
-h2,p{
-  padding-bottom:20px ;
+.tea-of-month h2,
+.tea-of-month p {
+  padding-bottom: 15px;
 }
-.tea-of-month .cards{
+.tea-of-month .cards {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -98,20 +112,54 @@ h2,p{
   row-gap: 15px;
 }
 
-.cards .card{
+.cards .card {
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
 }
-.card img{
+.card img {
   height: 200px;
   width: 300px;
   object-fit: cover;
 }
-.card h3{
+.card h3 {
   padding: 5px 0px;
 }
 
 /* End Tea Of Month Section */
+
+/* Start Location Section  */
+.location {
+  margin: 0 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+  width: calc(1200px-30px);
+  height: 500px;
+  background: no-repeat url("../Resources/Images/img-locations-background.jpg");
+  background-size:cover ;
+  background-position: 30% 30%;
+  background-clip: content-box;
+  
+}
+.branches{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 980px;
+  column-gap: 40px;
+  opacity: 1;
+  padding-bottom: 100px;
+}
+.branches .branch{
+  opacity: 1;
+  background-color: black;
+  text-align: center;
+  flex: 1 1 300px;
+  line-height: 60px;
+}
+
+/* End Location Section  */
