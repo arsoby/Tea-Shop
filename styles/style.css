@@ -17,26 +17,37 @@
   color: seashell;
   margin: 0;
   padding: 0;
-  opacity: 90%;
 }
 body {
   width: 1260px;
   margin: auto auto;
   background-color: black;
+  color: seashell;
 }
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: header;
   text-transform: capitalize;
+}
+h2,
+h3,
+h4,
+h5,
+p,
+address,
+a,
+header img {
+  opacity: 0.9;
 }
 /* This Rule for Margin between Sections */
 .our-mission,
 .tea-of-month,
 .location,
 .contact-us {
-  margin: 30px auto;
+  margin: 30px 30px;
 }
 /* End Global Rule */
 
@@ -48,16 +59,19 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  column-gap: 40%;
+  align-items: center;
+  column-gap: 60%;
+  border-bottom:1px solid seashell ;
 }
 header img {
   padding-left: 10px;
+  height: 50px;
   flex: 2 1 15%;
 }
 nav {
   display: flex;
   flex: 2 1 40%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-right: 10px;
 }
@@ -70,6 +84,7 @@ nav a {
 
 /* Start Our Mission Section */
 .our-mission {
+  margin-top: 0;
   background-image: url("../Resources/Images/img-mission-background.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,14 +94,13 @@ nav a {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 0 30px;
+  margin-left: 30px;
   height: 700px;
   width: 1200px;
 }
 .our-mission h2,
 .our-mission h4 {
   background-color: black;
-  opacity: 90%;
   width: 100%;
   text-align: center;
   padding-bottom: 10px;
@@ -98,6 +112,8 @@ nav a {
 section.tea-of-month {
   width: 1000px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tea-of-month h2,
 .tea-of-month p {
@@ -132,34 +148,46 @@ section.tea-of-month {
 
 /* Start Location Section  */
 .location {
-  margin: 0 30px;
+  margin: 30px 30px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   row-gap: 15px;
-  width: calc(1200px-30px);
+  width: 1200px;
   height: 500px;
   background: no-repeat url("../Resources/Images/img-locations-background.jpg");
-  background-size:cover ;
+  background-size: cover;
   background-position: 30% 30%;
   background-clip: content-box;
-  
 }
-.branches{
+.branches {
   display: flex;
   flex-flow: row nowrap;
   width: 980px;
   column-gap: 40px;
-  opacity: 1;
   padding-bottom: 100px;
 }
-.branches .branch{
-  opacity: 1;
+.branches .branch {
   background-color: black;
   text-align: center;
   flex: 1 1 300px;
   line-height: 60px;
 }
 
+/* End Location Section  */
+
+/* Start Location Section  */
+footer {
+  height: 200px;
+}
+footer h2,
+footer h5 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+footer p {
+  padding-left: 20px;
+  text-align: left;
+}
 /* End Location Section  */
